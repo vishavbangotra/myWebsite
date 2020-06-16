@@ -30,7 +30,8 @@
         </div>
     </div>
     <div class="row row-two justify-content-around">
-        <div class="col-md-5 box linkedin-box">
+        <div class="col-md-5 box linkedin-box" >
+            <a style="color:#212529;" href="https://www.github.com">
             <h2 id='linkedin-head'>LinkedIn</h2>
             <div class='row'>
                 <div class='col-sm-4 linkedin-logo-box'>
@@ -41,8 +42,10 @@
                     <p>Join my Professional Network and take a look at my Skills and Achievements.</p>
                 </div>
             </div>
+        </a>
         </div>
         <div class="col-md-5 box github-box">
+            <a style="color:#212529;" href="https://www.github.com">
             <h2 id='github-head'>Github</h2>
             <div class='row'>
                 <div class='col-sm-4 github-logo-box'>
@@ -51,11 +54,32 @@
                 <div style="padding-right: 6%"class='col-sm-8'>
                     <h4>Have a look!</h4>
                     <p>Have a look at my Open-Source Projects. Feel welcome to contribute in my Projects and help boost Open-Source Community.</p>
+                    <br>
                 </div>
-                
             </div>
+        </a>
         </div>
     </div>
+    <div style="color:#212529;" class="resume-box box">
+        <h2 id="resume-head">Resumé</h2>
+        <a href="{% static 'VishavBangotra_InternshalaResume.pdf' %}"></a>
+            <div class="row row-3">
+                <div class="col-md-4 cv-logo-col">
+                    <img id='cv-logo'src="{% static '/images/curriculum.png' %}" alt="fghj">
+                </div>
+                <div class="col-md-8 resume-detail">
+                    <h4 id='cv-head'>Have a look at my resumé my Resumé!</h4>
+                    <p>Checkout my qualification and experience. Click here!</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div></div>
+
+
+
+
   </div>
 
 {% endblock %}
