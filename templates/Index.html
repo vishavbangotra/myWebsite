@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+  <div class="container">
+      <div class='box'>
+        <h1 id='about-me-head'>About Me</h1>
+        <div class='row row-one'>
+            <div class="col-lg-4 profile-pic-col">
+                <img id="profile-pic"src="{% static '/images/mainpic.jpeg' %}" alt="no img">
+            </div>
+            <div class='col-lg-8 about-me-detail-col'>
+                <div class="wrapper">
+                    <div class='flexi'data-text></div>
+                    <span class="item">Software Developer</span>
+                    <span class="item">Competitive Programmer</span>
+                    <span class="item">Frontend developer</span>
+
+                  </div>
+                <p class='' id='about-me-detail'>
+                    I'm an Undergraduate Freshman Year Student currently pursuing a Bachelors degree in Electronics and Communication Engineering at UIET Panjab Univeristy, Chandigarh.
+                    My interests are primarily in Web Development, Competitive Programming, Electronics and Embedded System Design.
+                </p>
+                <p>
+                    <strong>Email:</strong> vishav.bangotra@gmail.com
+                    <br>
+                    <strong>Phone:</strong> (+91) 8082201833
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row row-two justify-content-around">
+        <div class="col-md-5 box linkedin-box">
+            <h2 id='linkedin-head'>LinkedIn</h2>
+            <div class='row'>
+                <div class='col-sm-4 linkedin-logo-box'>
+                    <img id='linkedin-logo' src="{% static 'images/linkedin.png' %}" alt="">
+                </div>
+                <div style="padding-right: 6%" class='col-sm-8'>
+                    <h4>Connect with me!</h4>
+                    <p>Join my Professional Network and take a look at my Skills and Achievements.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 box github-box">
+            <h2 id='github-head'>Github</h2>
+            <div class='row'>
+                <div class='col-sm-4 github-logo-box'>
+                    <img id='github-logo' src="{% static '/css/github-logo.svg' %}" alt="">
+                </div>
+                <div style="padding-right: 6%"class='col-sm-8'>
+                    <h4>Have a look!</h4>
+                    <p>Have a look at my Open-Source Projects. Feel welcome to contribute in my Projects and help boost Open-Source Community.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+{% endblock %}
